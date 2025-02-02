@@ -23,3 +23,38 @@ hr {
     rgba(0, 0, 0, 0)
   );
 }
+
+a {
+  color: green;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+.footer {
+  margin-top: 2rem;
+}
+
+.navLink {
+  display: inline-block;
+  margin: 1.2rem 2rem;
+}
+
+.topBand {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.mainTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.subTitle {
+  color: brown;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

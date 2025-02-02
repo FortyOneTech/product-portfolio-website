@@ -1,0 +1,9 @@
+.heroDiv {
+  margin: auto;
+  max-width: 80%;
+  position: relative;
+}
+
+.heroDiv img {
+  position: relative !important;
+}
