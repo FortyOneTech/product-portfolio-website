@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
@@ -28,14 +29,23 @@ export default function Home() {
         <h2>An espresso maker reads your mind</h2>
       </div>
 
+      <Link href="/gallery">
+        <p>Click here to learn more ...</p>
+      </Link>
+
       <div>
-        <Image 
-        priority
-        src="/images/hero.jpg"
-        height={292}
-        width={711}
-        alt="ESPectso 1000"
+        <Image
+          priority
+          src="/images/hero.jpg"
+          height={292}
+          width={711}
+          alt="ESPectso 1000"
         />
+      </div>
+
+      <div className="footer">
+        <hr />
+        <p>Copyrights (C) 2023 ESP, Inc. All Rights Reserved.</p>
       </div>
     </>
   );
