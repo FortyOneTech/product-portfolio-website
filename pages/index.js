@@ -24,21 +24,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
-        <h1>Introducing ESPectso 1000 by ESP</h1>
-        <h2>An espresso maker reads your mind</h2>
+      <div className="topBand">
+        <p className="mainTitle">Introducing ESPectso 1000 by ESP</p>
+        <p className="subTitle">An espresso maker reads your mind</p>
       </div>
 
-      <Link href="/gallery">
+      <Link className="navLink" href="/gallery">
         <p>Click here to learn more ...</p>
       </Link>
 
-      <div>
+      <div className={styles.heroDiv}>
         <Image
           priority
           src="/images/hero.jpg"
-          height={292}
-          width={711}
+          fill
+          object-fit="contain"
           alt="ESPectso 1000"
         />
       </div>

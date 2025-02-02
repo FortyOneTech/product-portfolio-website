@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import galleryStyles from "@/styles/Gallery.module.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,19 +24,19 @@ export default function Gallery() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
-        <h1>Introducing ESPectso 1000 by ESP</h1>
-        <h2>Three models for every need</h2>
+      <div className="topBand">
+        <p className="mainTitle">Introducing ESPectso 1000 by ESP</p>
+        <p className="subTitle">Three models for every need</p>
       </div>
 
-      <Link href="/">
+      <Link className="navLink" href="/">
         <p>Back to the home page</p>
       </Link>
 
       <div>
         <div>
-          <p className="mainTitle">Solitude</p>
-          <p className="subTitle">Perfect for highly motivated individuals</p>
+          <p className={galleryStyles.mainTitle}>Solitude</p>
+          <p className={galleryStyles.subTitle}>Perfect for highly motivated individuals</p>
           <Image
             priority
             src="/images/solitude.jpg"
@@ -47,8 +47,8 @@ export default function Gallery() {
         </div>
 
         <div>
-          <p className="mainTitle">Duo</p>
-          <p className="subTitle">Perfect for you and your partner</p>
+          <p className={galleryStyles.mainTitle}>Duo</p>
+          <p className={galleryStyles.subTitle}>Perfect for you and your partner</p>
           <Image
             priority
             src="/images/duo.jpg"
@@ -59,8 +59,8 @@ export default function Gallery() {
         </div>
 
         <div>
-          <p className="mainTitle">Teamwork</p>
-          <p className="subTitle">Perfect for your entire team</p>
+          <p className={galleryStyles.mainTitle}>Teamwork</p>
+          <p className={galleryStyles.subTitle}>Perfect for your entire team</p>
           <Image
             priority
             src="/images/teamwork.jpg"
@@ -71,7 +71,7 @@ export default function Gallery() {
         </div>
       </div>
 
-      <Link href="/">
+      <Link className="navLink" href="/">
         <p>Back to the home page</p>
       </Link>
 
