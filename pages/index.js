@@ -21,7 +21,7 @@ export default function Home() {
       <Layout>
       <p className="subTitle">An espresso maker reads your mind</p>
       <Link className="navLink" href="/gallery">
-        <p>Click here to learn more ...</p>
+        Click here to learn more ...
       </Link>
 
       <div className={styles.heroDiv}>
@@ -33,6 +33,10 @@ export default function Home() {
           alt="ESPectso 1000"
         />
       </div>
+
+      <Link className="navLink" href="/pre-order">
+        Click here to pre-order...
+      </Link>
 
       </Layout>
     </>

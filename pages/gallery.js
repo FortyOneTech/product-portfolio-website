@@ -22,7 +22,7 @@ export default function Gallery() {
       <p className="subTitle">Three models for every need</p>
 
       <Link className="navLink" href="/">
-        <p>Back to the home page</p>
+        Back to the home page
       </Link>
 
       <div>
