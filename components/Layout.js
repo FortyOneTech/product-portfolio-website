@@ -1,18 +1,15 @@
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import { Geist, Geist_Mono } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import { Ubuntu } from "next/font/google";
+import { Source_Code_Pro } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const ubuntuBold = Ubuntu({
   subsets: ["latin"],
+  weight: "700"
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const sourceCodePro = Source_Code_Pro({
+  subsets: ["latin"]
+})
 
 export default function Layout({ children }) {
   return (
@@ -25,12 +22,12 @@ export default function Layout({ children }) {
       </Head>
 
       <div className="topBand">
-        <p className="mainTitle">Introducing ESPectso 1000 by ESP</p>
+        <p className={`mainTitle ${ubuntuBold.className}`}>Introducing ESPectso 1000 by ESP</p>
       </div>
 
       { children }
 
-      <div className="footer">
+      <div className={`footer ${sourceCodePro.className}`}>
         <hr />
         <p>Copyrights (C) 2023 ESP, Inc. All Rights Reserved.</p>
       </div>
